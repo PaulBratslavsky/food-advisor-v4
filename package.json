@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "seed": "node scripts/seed.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^3.1.5",
+    "fs-extra": "8.1.0",
+    "knex": "0.16.3",
+    "lodash": "^4.17.5",
+    "reactour": "^1.18.0",
+    "sharp": "^0.30.7",
+    "better-sqlite3": "^7.6.2",
+    "unzip-stream": "^0.3.0",
+    "@strapi/strapi": "4.3.8",
+    "@strapi/plugin-graphql": "4.3.8",
+    "@strapi/plugin-users-permissions": "4.3.8"
+  },
+  "strapi": {
+    "uuid": "7b581c0d-89b7-479e-b379-a76ab90b8754"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
